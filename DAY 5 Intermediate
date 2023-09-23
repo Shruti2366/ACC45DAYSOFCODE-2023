@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int hoop;
+	    cin>>hoop;
+	    if(hoop==1){
+	        cout<<"1"<<endl;
+	    }
+	      else{
+	        cout<<(hoop/2+1)<<endl;
+	    }
+	        
+	    
+	}
+	return 0;
+}
