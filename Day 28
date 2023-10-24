@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T; // Number of test cases
+
+    while (T--) {
+        int W, X, Y, Z;
+        cin >> W >> X >> Y >> Z;
+
+        // Check if it's possible to measure the weight
+        if (W == X || W == Y || W == Z || (W == X + Y) || (W == X + Z) || (W == Y + Z) || (W == X + Y + Z)) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+
+    return 0;
+}
